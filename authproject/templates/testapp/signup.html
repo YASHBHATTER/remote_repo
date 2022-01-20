@@ -1,0 +1,14 @@
+{%extends 'testapp/base.htm' %} 
+{%block body_block%}
+
+    <div class="container">
+        <h1>Sign up to enjoy facilites</h1>
+        <form method="post">
+            {{form.as_p}}
+            {%csrf_token%}
+            <input type="submit" value="Signup" class="btn btn-primary">
+        </form>
+   
+    </div>
+
+{%endblock %}
